@@ -1,0 +1,29 @@
+@import 'constants/_colors.styl'
+@import 'components/_text.styl'
+
+body
+    disable-text-selection()
+    color $color_text
+    background-color $color_3
+    display table
+
+    & > div
+        display table-cell
+        width 100%
+        vertical-align middle
+
+    header
+        & > h1
+            line-height initial
+            margin 0
+            padding 0
+    section
+        margin 1em
+    section#contact-us
+        margin 1.5em
+        & > div
+            margin 0.5em
+            border-top 1px solid
+            padding-top 0.5em
+        & > address > div
+            margin 0.25em
